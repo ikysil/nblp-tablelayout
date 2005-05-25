@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+OpenIDE-Module: de.berlios.nblayoutpack.tablelayout
+OpenIDE-Module-Localizing-Bundle: de/berlios/nblayoutpack/tablelayout/Bundle.properties
+OpenIDE-Module-Layer: de/berlios/nblayoutpack/tablelayout/nb4.0/layer.xml
+OpenIDE-Module-Install: de/berlios/nblayoutpack/tablelayout/TableLayoutModule.class
+OpenIDE-Module-Module-Dependencies: org.netbeans.modules.form/2 = 200505031930
+Class-Path: ext/nblayoutpack/TableLayout-3.2.jar

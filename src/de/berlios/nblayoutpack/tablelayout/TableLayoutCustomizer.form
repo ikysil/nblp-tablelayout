@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.1" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-127,0,0,1,86"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+    <Property name="columns" type="int" value="1"/>
+    <Property name="rows" type="int" value="2"/>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="1" left="0" right="0" top="0">
+              <Color PropertyName="color" blue="80" green="80" id="gray" palette="1" red="80" type="palette"/>
+            </MatteColorBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="columnLabel">
+          <Properties>
+            <Property name="displayedMnemonic" type="int" value="67"/>
+            <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="columnTable"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="X Columns"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="columnTable">
+              <Properties>
+                <Property name="toolTipText" type="java.lang.String" value="Doubleclick or press Enter to edit the value"/>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[100, 87]"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JComboBox" name="columnParamCombo">
+          <Properties>
+            <Property name="editable" type="boolean" value="true"/>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="FILL"/>
+                <StringItem index="1" value="MINIMUM"/>
+                <StringItem index="2" value="PREFERRED"/>
+              </StringArray>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Press Enter to apply the value to the selected columns"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addColumnsButton">
+          <Properties>
+            <Property name="mnemonic" type="int" value="65"/>
+            <Property name="text" type="java.lang.String" value="Add"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="columnCountTextField1">
+          <Properties>
+            <Property name="columns" type="int" value="3"/>
+            <Property name="text" type="java.lang.String" value="1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="insertColumnsButton">
+          <Properties>
+            <Property name="mnemonic" type="int" value="73"/>
+            <Property name="text" type="java.lang.String" value="Insert"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="columnCountTextField2">
+          <Properties>
+            <Property name="columns" type="int" value="3"/>
+            <Property name="text" type="java.lang.String" value="1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="removeColumnsButton">
+          <Properties>
+            <Property name="mnemonic" type="int" value="101"/>
+            <Property name="text" type="java.lang.String" value="Remove"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+      <LayoutCode>
+        <CodeStatement>
+          <CodeExpression id="1__tableLayoutInstance1">
+            <CodeVariable name="_tableLayoutInstance1" type="20480" declaredType="info.clearthought.layout.TableLayout"/>
+            <ExpressionOrigin>
+              <ExpressionProvider type="CodeConstructor">
+                <CodeConstructor class="info.clearthought.layout.TableLayout" parameterTypes=""/>
+              </ExpressionProvider>
+            </ExpressionOrigin>
+          </CodeExpression>
+          <StatementProvider type="CodeExpression">
+            <CodeExpression id="1__tableLayoutInstance1"/>
+          </StatementProvider>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="1__tableLayoutInstance1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setHGap" class="info.clearthought.layout.TableLayout" parameterTypes="int"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="2">
+              <ExpressionOrigin>
+                <Value type="int" value="0"/>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="1__tableLayoutInstance1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setVGap" class="info.clearthought.layout.TableLayout" parameterTypes="int"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="3">
+              <ExpressionOrigin>
+                <Value type="int" value="0"/>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="1__tableLayoutInstance1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setColumn" class="info.clearthought.layout.TableLayout" parameterTypes="[D"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="4">
+              <ExpressionOrigin>
+                <Value type="[D" editor="de.berlios.nblayoutpack.tablelayout.TableLayoutSupport$DoubleArrayEditor">
+                  <SerializedValue value="-84,-19,0,5,117,114,0,2,91,68,62,-90,-116,20,-85,99,90,30,2,0,0,120,112,0,0,0,7,64,24,0,0,0,0,0,0,-65,-16,0,0,0,0,0,0,64,32,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0"/>
+                </Value>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="1__tableLayoutInstance1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setRow" class="info.clearthought.layout.TableLayout" parameterTypes="[D"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="5">
+              <ExpressionOrigin>
+                <Value type="[D" editor="de.berlios.nblayoutpack.tablelayout.TableLayoutSupport$DoubleArrayEditor">
+                  <SerializedValue value="-84,-19,0,5,117,114,0,2,91,68,62,-90,-116,20,-85,99,90,30,2,0,0,120,112,0,0,0,12,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,-65,-16,0,0,0,0,0,0,64,24,0,0,0,0,0,0"/>
+                </Value>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1">
+            <CodeVariable name="jPanel1" type="8194" declaredType="javax.swing.JPanel"/>
+            <ExpressionOrigin>
+              <ExpressionProvider type="ComponentRef">
+                <ComponentRef name="jPanel1"/>
+              </ExpressionProvider>
+            </ExpressionOrigin>
+          </CodeExpression>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="1__tableLayoutInstance1"/>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="7_columnLabel">
+              <CodeVariable name="columnLabel" type="8194" declaredType="javax.swing.JLabel"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="columnLabel"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="8">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="9">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="10">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="11">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="12">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="13">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="14">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="15_jScrollPane1">
+              <CodeVariable name="jScrollPane1" type="8194" declaredType="javax.swing.JScrollPane"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="jScrollPane1"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="16">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="17">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="18">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="19">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="20">
+                    <ExpressionOrigin>
+                      <Value type="int" value="10"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="21">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="22">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="23_columnParamCombo">
+              <CodeVariable name="columnParamCombo" type="8194" declaredType="javax.swing.JComboBox"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="columnParamCombo"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="24">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="25">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="26">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="27">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="28">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="29">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="30">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="31_addColumnsButton">
+              <CodeVariable name="addColumnsButton" type="8194" declaredType="javax.swing.JButton"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="addColumnsButton"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="32">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="33">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="34">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="35">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="36">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="37">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="38">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="39_columnCountTextField1">
+              <CodeVariable name="columnCountTextField1" type="8194" declaredType="javax.swing.JTextField"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="columnCountTextField1"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="40">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="41">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="42">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="43">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="44">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="45">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="46">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="47_insertColumnsButton">
+              <CodeVariable name="insertColumnsButton" type="8194" declaredType="javax.swing.JButton"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="insertColumnsButton"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="48">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="49">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="50">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="51">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="52">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="53">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="54">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="55_columnCountTextField2">
+              <CodeVariable name="columnCountTextField2" type="8194" declaredType="javax.swing.JTextField"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="columnCountTextField2"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="56">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="57">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="58">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="59">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="60">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="61">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="62">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="6_jPanel1"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="63_removeColumnsButton">
+              <CodeVariable name="removeColumnsButton" type="8194" declaredType="javax.swing.JButton"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="removeColumnsButton"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="64">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="65">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="66">
+                    <ExpressionOrigin>
+                      <Value type="int" value="9"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="67">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="68">
+                    <ExpressionOrigin>
+                      <Value type="int" value="9"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="69">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="70">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+      </LayoutCode>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
+            <MatteColorBorder bottom="0" left="0" right="0" top="1">
+              <Color PropertyName="color" blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
+            </MatteColorBorder>
+          </Border>
+        </Property>
+      </Properties>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="rowLabel">
+          <Properties>
+            <Property name="displayedMnemonic" type="int" value="82"/>
+            <Property name="labelFor" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
+              <ComponentRef name="rowTable"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Y Rows"/>
+          </Properties>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JTable" name="rowTable">
+              <Properties>
+                <Property name="toolTipText" type="java.lang.String" value="Doubleclick or press Enter to edit the value"/>
+                <Property name="preferredScrollableViewportSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[100, 87]"/>
+                </Property>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JComboBox" name="rowParamCombo">
+          <Properties>
+            <Property name="editable" type="boolean" value="true"/>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+              <StringArray count="3">
+                <StringItem index="0" value="FILL"/>
+                <StringItem index="1" value="MINIMUM"/>
+                <StringItem index="2" value="PREFERRED"/>
+              </StringArray>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Press Enter to apply the value to the selected rows"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="addRowsButton">
+          <Properties>
+            <Property name="mnemonic" type="int" value="100"/>
+            <Property name="text" type="java.lang.String" value="Add"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="rowCountTextField1">
+          <Properties>
+            <Property name="columns" type="int" value="3"/>
+            <Property name="text" type="java.lang.String" value="1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="insertRowsButton">
+          <Properties>
+            <Property name="mnemonic" type="int" value="110"/>
+            <Property name="text" type="java.lang.String" value="Insert"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="rowCountTextField2">
+          <Properties>
+            <Property name="columns" type="int" value="3"/>
+            <Property name="text" type="java.lang.String" value="1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="removeRowsButton">
+          <Properties>
+            <Property name="mnemonic" type="int" value="109"/>
+            <Property name="text" type="java.lang.String" value="Remove"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+      <LayoutCode>
+        <CodeStatement>
+          <CodeExpression id="71__tableLayoutInstance">
+            <CodeVariable name="_tableLayoutInstance" type="20480" declaredType="info.clearthought.layout.TableLayout"/>
+            <ExpressionOrigin>
+              <ExpressionProvider type="CodeConstructor">
+                <CodeConstructor class="info.clearthought.layout.TableLayout" parameterTypes=""/>
+              </ExpressionProvider>
+            </ExpressionOrigin>
+          </CodeExpression>
+          <StatementProvider type="CodeExpression">
+            <CodeExpression id="71__tableLayoutInstance"/>
+          </StatementProvider>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="71__tableLayoutInstance"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setHGap" class="info.clearthought.layout.TableLayout" parameterTypes="int"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="72">
+              <ExpressionOrigin>
+                <Value type="int" value="0"/>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="71__tableLayoutInstance"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setVGap" class="info.clearthought.layout.TableLayout" parameterTypes="int"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="73">
+              <ExpressionOrigin>
+                <Value type="int" value="0"/>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="71__tableLayoutInstance"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setColumn" class="info.clearthought.layout.TableLayout" parameterTypes="[D"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="74">
+              <ExpressionOrigin>
+                <Value type="[D" editor="de.berlios.nblayoutpack.tablelayout.TableLayoutSupport$DoubleArrayEditor">
+                  <SerializedValue value="-84,-19,0,5,117,114,0,2,91,68,62,-90,-116,20,-85,99,90,30,2,0,0,120,112,0,0,0,7,64,24,0,0,0,0,0,0,-65,-16,0,0,0,0,0,0,64,32,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0"/>
+                </Value>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="71__tableLayoutInstance"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setRow" class="info.clearthought.layout.TableLayout" parameterTypes="[D"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="75">
+              <ExpressionOrigin>
+                <Value type="[D" editor="de.berlios.nblayoutpack.tablelayout.TableLayoutSupport$DoubleArrayEditor">
+                  <SerializedValue value="-84,-19,0,5,117,114,0,2,91,68,62,-90,-116,20,-85,99,90,30,2,0,0,120,112,0,0,0,12,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,64,24,0,0,0,0,0,0,-64,0,0,0,0,0,0,0,-65,-16,0,0,0,0,0,0,64,24,0,0,0,0,0,0"/>
+                </Value>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2">
+            <CodeVariable name="jPanel2" type="8194" declaredType="javax.swing.JPanel"/>
+            <ExpressionOrigin>
+              <ExpressionProvider type="ComponentRef">
+                <ComponentRef name="jPanel2"/>
+              </ExpressionProvider>
+            </ExpressionOrigin>
+          </CodeExpression>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="71__tableLayoutInstance"/>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="77_rowLabel">
+              <CodeVariable name="rowLabel" type="8194" declaredType="javax.swing.JLabel"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="rowLabel"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="78">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="79">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="80">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="81">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="82">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="83">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="84">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="85_jScrollPane2">
+              <CodeVariable name="jScrollPane2" type="8194" declaredType="javax.swing.JScrollPane"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="jScrollPane2"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="86">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="87">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="88">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="89">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="90">
+                    <ExpressionOrigin>
+                      <Value type="int" value="10"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="91">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="92">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="93_rowParamCombo">
+              <CodeVariable name="rowParamCombo" type="8194" declaredType="javax.swing.JComboBox"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="rowParamCombo"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="94">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="95">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="96">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="97">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="98">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="99">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="100">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="101_addRowsButton">
+              <CodeVariable name="addRowsButton" type="8194" declaredType="javax.swing.JButton"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="addRowsButton"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="102">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="103">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="104">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="105">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="106">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="107">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="108">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="109_rowCountTextField1">
+              <CodeVariable name="rowCountTextField1" type="8194" declaredType="javax.swing.JTextField"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="rowCountTextField1"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="110">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="111">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="112">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="113">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="114">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="115">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="116">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="117_insertRowsButton">
+              <CodeVariable name="insertRowsButton" type="8194" declaredType="javax.swing.JButton"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="insertRowsButton"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="118">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="119">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="120">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="121">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="122">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="123">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="124">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="125_rowCountTextField2">
+              <CodeVariable name="rowCountTextField2" type="8194" declaredType="javax.swing.JTextField"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="rowCountTextField2"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="126">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="127">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="128">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="129">
+                    <ExpressionOrigin>
+                      <Value type="int" value="5"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="130">
+                    <ExpressionOrigin>
+                      <Value type="int" value="7"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="131">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="132">
+                    <ExpressionOrigin>
+                      <Value type="int" value="1"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+        <CodeStatement>
+          <CodeExpression id="76_jPanel2"/>
+          <StatementProvider type="CodeMethod">
+            <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component, java.lang.Object"/>
+          </StatementProvider>
+          <Parameters>
+            <CodeExpression id="133_removeRowsButton">
+              <CodeVariable name="removeRowsButton" type="8194" declaredType="javax.swing.JButton"/>
+              <ExpressionOrigin>
+                <ExpressionProvider type="ComponentRef">
+                  <ComponentRef name="removeRowsButton"/>
+                </ExpressionProvider>
+              </ExpressionOrigin>
+            </CodeExpression>
+            <CodeExpression id="134">
+              <ExpressionOrigin>
+                <ExpressionProvider type="CodeConstructor">
+                  <CodeConstructor class="info.clearthought.layout.TableLayoutConstraints" parameterTypes="int, int, int, int, int, int"/>
+                </ExpressionProvider>
+                <Parameters>
+                  <CodeExpression id="135">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="136">
+                    <ExpressionOrigin>
+                      <Value type="int" value="9"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="137">
+                    <ExpressionOrigin>
+                      <Value type="int" value="3"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="138">
+                    <ExpressionOrigin>
+                      <Value type="int" value="9"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="139">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <CodeExpression id="140">
+                    <ExpressionOrigin>
+                      <Value type="int" value="2"/>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                </Parameters>
+              </ExpressionOrigin>
+            </CodeExpression>
+          </Parameters>
+        </CodeStatement>
+      </LayoutCode>
+    </Container>
+  </SubComponents>
+</Form>

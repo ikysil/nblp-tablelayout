@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="http://openide.netbeans.org/fs/filesystem.xsl"?>
+<!DOCTYPE filesystem PUBLIC "-//NetBeans//DTD Filesystem 1.1//EN" "http://www.netbeans.org/dtds/filesystem-1_1.dtd">
+<filesystem>
+  <folder name="Mount">
+    <folder name="java">
+      <file name="tablelayout.xml" url="tablelayout.xml">
+        <attr name="SystemFileSystem.localizingBundle" stringvalue="de.berlios.nblayoutpack.tablelayout.Bundle"/>
+      </file>
+    </folder>
+  </folder>
+
+  <folder name="Palette">
+    <folder name="Layouts">
+      <file name="info-clearthought-layout-TableLayout.instance">
+        <attr name="SystemFileSystem.localizingBundle" stringvalue="de.berlios.nblayoutpack.tablelayout.Bundle" />
+        <attr name="SystemFileSystem.icon" urlvalue="nbres:/de/berlios/nblayoutpack/tablelayout/resources/tablelayout16.png" />
+        <attr name="beaninfo" boolvalue="false"/>
+      </file>
+    </folder>
+  </folder>
+</filesystem>
