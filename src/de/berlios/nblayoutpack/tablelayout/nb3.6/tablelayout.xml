@@ -2,5 +2,5 @@
 
 <!DOCTYPE library PUBLIC "-//NetBeans//DTD Java Library 1.1//EN" "http://www.netbeans.org/dtds/java-library-1_1.dtd">
 <library>
-  <archive name="modules/ext/nblayoutpack/TableLayout-3.2.jar"/>
+  <archive name="modules/ext/nblayoutpack/TableLayout-3.4.jar"/>
 </library>

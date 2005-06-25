@@ -10,6 +10,21 @@
     </folder>
   </folder>
 
+  <!-- Mount documentation automatically. -->
+  <folder name="Mount">
+    <folder name="Javadoc">
+      <file name="info-clearthought-layout-TableLayout-javadoc.xml">
+        <![CDATA[<?xml version="1.0"?>
+<!DOCTYPE Javadoc PUBLIC
+          "-//NetBeans IDE//DTD JavadocLibrary//EN"
+          "http://www.netbeans.org/dtds/JavadocLibrary-1_0.dtd">
+<Javadoc>
+  <Archive name="docs/nblayoutpack/TableLayout-3.4-javadoc.jar"/>
+</Javadoc>
+]]>
+      </file>
+    </folder>
+  </folder>
   <folder name="Palette">
     <folder name="Layouts">
       <file name="info-clearthought-layout-TableLayout.instance">

@@ -42,13 +42,11 @@ Microsystems, Inc. All Rights Reserved.
     Identifies all the files to be considered part of this module when deployed 
     -->
     <target name="files-init" depends="basic-init">
-        <echo>${module.jar}</echo>
-        <echo>${nb.system.dir}/Modules/${code.name.base.dashes}.xml</echo>
-        <echo>${nb.modules.dir}/ext/nblayoutpack/TableLayout-3.2.jar</echo>
         <patternset id="module.files">
             <include name="${module.jar}"/>
             <include name="${nb.system.dir}/Modules/${code.name.base.dashes}.xml"/>
-            <include name="${nb.modules.dir}/ext/nblayoutpack/TableLayout-3.2.jar"/>
+            <include name="${nb.modules.dir}/ext/nblayoutpack/TableLayout-3.4.jar"/>
+            <include name="docs/nblayoutpack/TableLayout-3.4-javadoc.jar"/>
         </patternset>
     </target>
 
@@ -60,12 +58,12 @@ Microsystems, Inc. All Rights Reserved.
     -->
          
     <target name="netbeans-extra" depends="init">
-        <mkdir dir="${netbeans.dest.dir}/${cluster.dir}/${nb.modules.dir}/ext/nblayoutpack"/>
-        <copy todir="${netbeans.dest.dir}/${cluster.dir}/${nb.modules.dir}/ext/nblayoutpack">
-          <fileset dir="../../lib">
-            <include name="TableLayout-3.2.jar"/>
-          </fileset>
-        </copy>
+        <property name="modules.dir" value="${netbeans.dest.dir}/${cluster.dir}/${nb.modules.dir}"/>
+        <mkdir dir="${modules.dir}/ext/nblayoutpack"/>
+        <copy todir="${modules.dir}/ext/nblayoutpack" file="../../lib/TableLayout-3.4.jar"/>
+        <property name="module.cluster.dir" value="${netbeans.dest.dir}/${cluster.dir}"/>
+        <mkdir dir="${module.cluster.dir}/docs/nblayoutpack"/>
+        <copy todir="${module.cluster.dir}/docs/nblayoutpack" file="../../lib/TableLayout-3.4-javadoc.jar"/>
     </target>
 
 

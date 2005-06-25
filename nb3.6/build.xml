@@ -19,7 +19,7 @@
     <!-- This might instead be in ${netbeans.user}/ant/extra/nbantext.jar: -->
     <property name="nbantext.jar" location="${nb}/ant/extra/nbantext.jar"/>
     <!-- Adjust to be the name of your module for JARs etc.: -->
-    <property name="name" value="nblayoutpack"/>
+    <property name="name" value="nblayoutpack-tablelayout"/>
     <!-- Location of sources (classpath root): -->
     <property name="src" location="${basedir}/src"/>
     <property name="output" location="${basedir}/../output"/>
@@ -43,7 +43,7 @@
                 <pathelement location="${nb}/lib/openide.jar"/>
                 <pathelement location="${nb}/lib/openide-loaders.jar"/>
                 <pathelement location="${nb}/modules/form.jar"/>
-                <pathelement location="lib/TableLayout-3.2.jar"/>
+                <pathelement location="lib/TableLayout-3.4.jar"/>
             </classpath>
         </javac>
     </target>
@@ -66,11 +66,9 @@
 
     <target name="all" depends="clean,jars" description="Build the module.">
       <mkdir dir="${output}/netbeans/modules/ext/nblayoutpack"/>
-      <copy todir="${output}/netbeans/modules/ext/nblayoutpack">
-        <fileset dir="lib">
-          <include name="*.jar"/>
-        </fileset>
-      </copy>
+      <copy todir="${output}/netbeans/modules/ext/nblayoutpack" file="lib/TableLayout-3.4.jar"/>
+      <mkdir dir="${output}/netbeans/docs/nblayoutpack"/>
+      <copy todir="${output}/netbeans/docs/nblayoutpack" file="lib/TableLayout-3.4-javadoc.jar"/>
     </target>
 
     <!-- This target will only work *inside* the IDE! -->
@@ -83,7 +81,7 @@
       <mkdir dir="${output}/reload"/>
       <zip zipfile="${output}/reload/${name}.jar" compress="true">
         <zipfileset src="${output}/netbeans/modules/${name}.jar"/>
-        <zipfileset src="${output}/netbeans/modules/ext/nblayoutpack/TableLayout-3.2.jar">
+        <zipfileset src="${output}/netbeans/modules/ext/nblayoutpack/TableLayout-3.4.jar">
           <exclude name="META-INF/MANIFEST.MF"/>
         </zipfileset>
       </zip>
