@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE library PUBLIC "-//NetBeans//DTD Library Declaration 1.0//EN" "http://www.netbeans.org/dtds/library-declaration-1_0.dtd">
+
+<library version="1.0">
+    <name>TableLayout 3.4</name>
+    <type>j2se</type>
+    <localizing-bundle>de/berlios/nblayoutpack/tablelayout/Bundle</localizing-bundle>
+    <volume>
+        <type>classpath</type>
+        <resource>jar:nbinst:///modules/ext/nblayoutpack/TableLayout-3.4.jar!/</resource>
+    </volume>
+    <volume>
+        <type>javadoc</type>
+        <resource>jar:nbinst:///docs/nblayoutpack/TableLayout-3.4-javadoc.jar!/</resource>
+    </volume>
+</library>
