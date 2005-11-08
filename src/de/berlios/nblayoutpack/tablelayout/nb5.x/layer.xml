@@ -4,7 +4,7 @@
 <filesystem>
 
   <folder name="FormDesignerPalette">
-    <folder name="Layouts">
+    <folder name="_Layouts_only_for_internal_use_">
       <attr name="SystemFileSystem.localizingBundle" stringvalue="de.berlios.nblayoutpack.tablelayout.Bundle"/>
       <file name="TableLayout.palette_item" url="palette/TableLayout.palette_item" />
     </folder>
@@ -13,6 +13,15 @@
   <folder name="org-netbeans-api-project-libraries">
     <folder name="Libraries">
       <file name="tablelayout.xml" url="tablelayout.xml"/>
+    </folder>
+  </folder>
+
+  <!-- form class loader type registration -->
+  <folder name="org-netbeans-modules-form">
+    <folder name="classloader">
+      <folder name="system">
+        <file name="TableLayoutClasses.txt" url="TableLayoutClasses.txt" />
+      </folder>
     </folder>
   </folder>
 

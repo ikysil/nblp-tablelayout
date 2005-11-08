@@ -7,6 +7,6 @@
   <description localizing-bundle="de.berlios.nblayoutpack.tablelayout.Bundle"
                display-name-key="Palette/Layouts/info-clearthought-layout-TableLayout.instance" />
   <classpath>
-      <resource type="library" name="tablelayout" />
+      <resource type="library" name="TableLayout 3.4" />
   </classpath>
 </palette_item>
